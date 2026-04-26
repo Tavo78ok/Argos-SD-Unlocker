@@ -1,4 +1,4 @@
-ArgOS SD Unlocker
+## ArgOS SD Unlocker
 <p align="center">
   <img src="https://img.shields.io/badge/version-1.2.0-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/platform-Linux-orange?style=for-the-badge&logo=linux" />
