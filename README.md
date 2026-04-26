@@ -16,11 +16,12 @@ Capturas de pantalla
 Agrega tus capturas aquí
 
 
-Características
-FunciónDescripción🔍 Verificar bloqueoDetecta si la tarjeta está en modo solo lectura (blockdev --getro)🔓 DesbloquearFuerza modo lectura/escritura (blockdev --setrw)💾 FormatearFAT32, NTFS o EXT4 con etiqueta ARGOS_SD🛠️ RepararEjecuta fsck -y desmontando previamente el dispositivo🧬 Recuperar superbloqueRecuperación avanzada de particiones ext2/3/4 con superbloque corrupto via e2fsck -b🧹 LimpiarBorrado rápido (zeros) o seguro (zeros + aleatorio, 2 pasadas)
+# Características:
+
+- DesbloquearFuerza🔍 Verificar bloqueoDetecta si la tarjeta está en modo solo lectura (blockdev --getro)🔓 - DesbloquearFuerza modo lectura/escritura (blockdev --setrw)💾 - FormatearFAT32, NTFS o EXT4 con etiqueta ARGOS_SD🛠️ RepararEjecuta fsck -y desmontando previamente el dispositivo🧬 Recuperar superbloqueRecuperación avanzada de particiones ext2/3/4 con superbloque corrupto via e2fsck -b🧹               - LimpiarBorrado rápido (zeros) o seguro (zeros + aleatorio, 2 pasadas)
 Otras características
 
-Detección automática de dispositivos removibles via lsblk
+# Detección automática de dispositivos removibles via lsblk
 Autenticación gráfica mediante polkit / pkexec (sin necesidad de terminal)
 Operaciones en hilo secundario — la UI nunca se congela
 Notificaciones tipo toast y spinner de progreso
