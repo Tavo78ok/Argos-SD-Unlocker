@@ -52,7 +52,7 @@ dosfstools       # mkfs.vfat
 ntfs-3g          # mkfs.ntfs
 policykit-1 | polkitd
 
-Instalación
+# Instalación
 Desde el .deb (recomendado)
 bash# Descargar la última release
 wget https://github.com/Tavo78ok/argos-sd-unlocker/releases/latest/download/argos-sd-unlocker_1.2.0_all.deb
@@ -82,17 +82,17 @@ sudo chmod +x /usr/share/argos-sd-unlocker/sd_unlocker_helper
 # Ejecutar
 python3 usr/share/argos-sd-unlocker/sd_unlocker.py
 
-Uso
+# Uso
 
-Conecta tu tarjeta SD
+- Conecta tu tarjeta SD
 Abre ArgOS SD Unlocker desde el menú de aplicaciones
 Haz clic en Actualizar dispositivos — aparecerá tu tarjeta en el selector
 Elige la acción deseada — se pedirá tu contraseña de administrador via el diálogo gráfico del sistema
 
-Recuperación de superbloque corrupto
+- Recuperación de superbloque corrupto
 Si fsck reporta Bad magic number in super-block, usa Recuperar superbloque:
 
-Selecciona el dispositivo ext2/ext3/ext4 afectado
+- Selecciona el dispositivo ext2/ext3/ext4 afectado
 Haz clic en Recuperar superbloque → Recuperar
 La app busca automáticamente los bloques de respaldo con mke2fs -n
 Prueba cada candidato con e2fsck -b <bloque> hasta encontrar uno válido
@@ -118,7 +118,7 @@ argos-sd-unlocker/
 │       └── polkit-1/actions/
 │           └── io.openargos.SDUnlocker.policy
 
-----
+```
 
 ¿Por qué un helper separado?
 GTK4 no puede llamar a sudo desde una app gráfica sin terminal. El helper bash concentra todos los comandos privilegiados (blockdev, mkfs.*, fsck, dd) y se ejecuta via pkexec, que muestra el diálogo gráfico de autenticación del sistema.
@@ -128,7 +128,7 @@ bashgit clone https://github.com/Tavo78ok/argos-sd-unlocker.git
 cd argos-sd-unlocker
 dpkg-deb --build build argos-sd-unlocker_1.2.0_all.deb
 
-Parte del ecosistema ArgOS
+- Parte del ecosistema ArgOS
 ArgOS SD Unlocker es parte de ArgOS Platinum Edition, una distribución Linux basada en Debian con un conjunto de herramientas nativas desarrolladas con GTK4/libadwaita.
 Otras apps del ecosistema:
 
