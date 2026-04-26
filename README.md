@@ -117,10 +117,13 @@ argos-sd-unlocker/
 │       │   └── io.openargos.SDUnlocker.svg
 │       └── polkit-1/actions/
 │           └── io.openargos.SDUnlocker.policy
+
+----
+
 ¿Por qué un helper separado?
 GTK4 no puede llamar a sudo desde una app gráfica sin terminal. El helper bash concentra todos los comandos privilegiados (blockdev, mkfs.*, fsck, dd) y se ejecuta via pkexec, que muestra el diálogo gráfico de autenticación del sistema.
 
-Construir el .deb
+# Construir el .deb
 bashgit clone https://github.com/Tavo78ok/argos-sd-unlocker.git
 cd argos-sd-unlocker
 dpkg-deb --build build argos-sd-unlocker_1.2.0_all.deb
