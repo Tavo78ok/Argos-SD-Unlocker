@@ -94,7 +94,7 @@ Si tiene éxito, haz backup de tus datos antes de reformatear
 
 ⚠️ Esta función solo aplica a sistemas de archivos ext2/ext3/ext4. Para FAT32/NTFS usa Reparar o Formatear.
 
-
+```
 Arquitectura
 argos-sd-unlocker/
 ├── usr/
